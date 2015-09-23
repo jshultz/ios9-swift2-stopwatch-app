@@ -51,11 +51,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONr-du-kil">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONr-du-kil">
                                 <rect key="frame" x="204" y="105" width="192" height="114"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="J48-ev-4wx"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -64,10 +61,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="T7y-Wg-rrq" secondAttribute="trailing" constant="-20" id="3Mx-ju-DrT"/>
-                            <constraint firstItem="ONr-du-kil" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="184" id="DtG-gy-G59"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lPK-7k-Ek8" secondAttribute="trailing" constant="-20" id="cDf-NG-FcN"/>
+                            <constraint firstItem="ONr-du-kil" firstAttribute="top" secondItem="T7y-Wg-rrq" secondAttribute="bottom" constant="33" id="fVV-aD-jOj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lPK-7k-Ek8" secondAttribute="bottom" id="o3m-PN-vxt"/>
                             <constraint firstItem="T7y-Wg-rrq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pI9-RQ-JeE"/>
+                            <constraint firstItem="ONr-du-kil" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u6V-d6-doT"/>
                             <constraint firstItem="T7y-Wg-rrq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="vQG-xC-d1y"/>
                             <constraint firstItem="lPK-7k-Ek8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zXa-sZ-0HK"/>
                         </constraints>

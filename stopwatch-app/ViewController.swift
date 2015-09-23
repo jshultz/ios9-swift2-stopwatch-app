@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     var time = 0
     
+    var started = 0
+    
     func result() {
         time++
         labelTimer.text = String(time)
@@ -35,15 +37,20 @@ class ViewController: UIViewController {
     
     @IBAction func stopButton(sender: AnyObject) {
         timer.invalidate()
+        started = 0
     }
     
     @IBAction func startButton(sender: AnyObject) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
+        if started == 0 {
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
+            started = 1
+        }
     }
 
     @IBAction func resetButton(sender: AnyObject) {
         time = 0
         timer.invalidate()
+        started = 0
         labelTimer.text = "0"
     }
 
